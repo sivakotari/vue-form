@@ -5,13 +5,11 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
 import LoginPage from "./components/Login";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
     LoginPage
   },
   methods: {
@@ -35,7 +33,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   margin: 60px auto;
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 </style>

@@ -26,7 +26,12 @@
 
       <p>
         <label for="rememberUser">Remember me</label>
-        <input id="rememberUser" type="checkbox" v-model="rememberUser">
+        <input
+          id="rememberUser"
+          type="checkbox"
+          v-model="rememberUser"
+          :disabled="!(username && password)"
+        >
       </p>
 
       <p>
@@ -38,10 +43,6 @@
     <div class="nav-links">
       <router-link to="/loginSuccess">Try direct access</router-link>
     </div>
-    <!-- <p v-show="submitted">
-      {{username}}
-      <span>{{rememberUser}}</span>
-    </p>-->
   </div>
 </template>
 
